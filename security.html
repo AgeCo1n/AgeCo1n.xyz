@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security & Audits — AgeCoin</title>
+  <meta name="description" content="AgeCoin's contract address, audit status, and bug bounty program.">
+  <link rel="canonical" href="https://agecoin.org/security.html">
+  <meta property="og:title" content="Security & Audits — AgeCoin">
+  <meta property="og:image" content="https://agecoin.org/assets/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="hud" id="top">
+    <div class="hud__inner">
+      <a class="hud__brand" href="index.html" aria-label="AgeCoin home">
+        <span class="coin coin--small" aria-hidden="true">
+          <span class="coin__face"></span>
+          <span class="coin__ring"></span>
+          <span class="coin__glyph">A</span>
+        </span>
+        AGECOIN
+      </a>
+      <nav class="hud__nav" id="hud-nav">
+        <a href="index.html#powerups">Power-Ups</a>
+        <a href="faq.html#tokenomics">Tokenomics</a>
+        <a href="faq.html#faq">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="security.html">Security</a>
+        <a href="index.html#whitepaper">White Paper</a>
+        <a href="index.html#roadmap">Roadmap</a>
+      </nav>
+      <div class="hud__actions">
+        <a class="btn btn--ghost" href="index.html#whitepaper">Read White Paper</a>
+        <button class="hud__toggle" id="navToggle" aria-expanded="false" aria-controls="hud-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">SHIELD +5</p>
+      <h1>Security &amp; Audits</h1>
+      <p class="lede">
+        How AgeCoin protects the protocol, and how you can verify it yourself
+        instead of taking our word for it.
+      </p>
+    </section>
+
+    <section>
+      <h2 style="text-align:center; font-size:0.9rem; color: var(--gold);">Contract Address</h2>
+      <div class="contract-box">
+        <code id="contractAddress">0x0000000000000000000000000000000000AGE</code>
+        <button class="btn btn--secondary" id="copyAddressBtn" type="button">Copy</button>
+        <a class="btn btn--ghost" href="#" id="explorerLink" target="_blank" rel="noopener noreferrer">View on Explorer</a>
+      </div>
+
+      <h2 style="text-align:center; font-size:0.9rem; color: var(--gold);">Independent Audits</h2>
+      <div class="audit-grid">
+        <article class="audit-card">
+          <span class="audit-card__status">Scheduled</span>
+          <h3>Audit Firm A</h3>
+          <p>Full smart-contract and consensus-layer review, scheduled ahead of mainnet launch.</p>
+          <a href="#">Report will be linked here</a>
+        </article>
+        <article class="audit-card">
+          <span class="audit-card__status">Scheduled</span>
+          <h3>Audit Firm B</h3>
+          <p>Independent second-opinion audit and penetration test, scheduled ahead of mainnet launch.</p>
+          <a href="#">Report will be linked here</a>
+        </article>
+      </div>
+
+        <a class="btn btn--secondary" href="mailto:agecoin.xyz@gmail.com">Report</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="hud__brand" href="index.html" aria-label="AgeCoin home">
+        <span class="coin coin--small" aria-hidden="true">
+          <span class="coin__face"></span>
+          <span class="coin__ring"></span>
+          <span class="coin__glyph">A</span>
+        </span>
+        AGECOIN
+      </a>
+      <nav class="footer__links">
+        <a href="team.html">Team</a>
+        <a href="security.html">Security</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="https://x.com/AgeCoin_xyz" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <a href="https://discord.gg/YMj9HkHyt3" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://github.com/AgeCo1n" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <p class="footer__legal">
+        &copy; 2026 AgeCoin.org &middot; Not financial advice. Do your own research.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

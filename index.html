@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgeCoin</title>
+  <meta name="description" content="AgeCoin (AGE) — a pixel-forged cryptocurrency built on Proof-of-Age consensus. Read the white paper and discover why AgeCoin levels up the crypto world.">
+  <link rel="canonical" href="https://agecoin.org/">
+  <meta property="og:title" content="AgeCoin">
+  <meta property="og:description" content="The pixel-forged cryptocurrency that rewards patience, loyalty, and time itself.">
+  <meta property="og:url" content="https://agecoin.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://agecoin.org/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AgeCoin">
+  <meta name="twitter:description" content="The pixel-forged cryptocurrency that rewards patience, loyalty, and time itself.">
+  <meta name="twitter:image" content="https://agecoin.org/assets/og-image.png">
+
+  <!-- Pixel-style fonts: Press Start 2P for display, VT323 for readable retro body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Ambient scanline overlay, purely decorative -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ============ HUD NAV ============ -->
+  <header class="hud" id="top">
+    <div class="hud__inner">
+      <a class="hud__brand" href="#top" aria-label="AgeCoin home">
+        <span class="coin coin--small" aria-hidden="true">
+          <span class="coin__face"></span>
+          <span class="coin__ring"></span>
+          <span class="coin__glyph">A</span>
+        </span>
+        AGECOIN
+      </a>
+
+      <nav class="hud__nav" id="hud-nav">
+        <a href="#powerups">Power-Ups</a>
+        <a href="faq.html#tokenomics">Tokenomics</a>
+        <a href="faq.html#faq">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="security.html">Security</a>
+        <a href="#whitepaper">White Paper</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+
+      <div class="hud__actions">
+        <a class="btn btn--ghost" href="#whitepaper">Read White Paper</a>
+        <button class="hud__toggle" id="navToggle" aria-expanded="false" aria-controls="hud-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">LEVEL NEXT LEVEL &mdash; AgeCoin</p>
+
+        <div class="coin coin--hero" aria-hidden="true">
+          <span class="coin__face"></span>
+          <span class="coin__ring"></span>
+          <span class="coin__glyph">A</span>
+        </div>
+
+        <h1 class="hero__title">AGECOIN</h1>
+        <p class="hero__subtitle">
+          The pixel-forged cryptocurrency that rewards patience, loyalty,
+          and time itself. Stake honestly, hold steady, level up.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#whitepaper" class="btn btn--primary">Read White Paper</a>
+          <a href="#powerups" class="btn btn--secondary">See Power-Ups</a>
+        </div>
+
+        <ul class="stat-strip" aria-label="AgeCoin key facts">
+          <li><span class="stat-strip__label">Consensus</span><span class="stat-strip__value">Proof-of-Age</span></li>
+          <li><span class="stat-strip__label">Block Time</span><span class="stat-strip__value">~3 sec</span></li>
+          <li><span class="stat-strip__label">Max Supply</span><span class="stat-strip__value">1,000,000,000 AGE</span></li>
+          <li><span class="stat-strip__label">Network</span><span class="stat-strip__value">Live on pump.fun/Solana</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ POWER-UPS / ADVANTAGES ============ -->
+    <section class="powerups" id="powerups">
+      <div class="section__head">
+        <p class="eyebrow">POWER-UPS</p>
+        <h2>Why AgeCoin Wins the Level ?</h2>
+        <p class="section__lede">
+          Every crypto project claims to be different. Here is what AgeCoin
+          actually ships &mdash; the power-ups that set it apart in a crowded arena.
+        </p>
+      </div>
+
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-01</span>
+          <h3>Proof-of-Age Consensus</h3>
+          <p>Validators gain trust &mdash; the longer they hold their coins, the better it is for the future.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-02</span>
+          <h3>Deflationary by Design</h3>
+          <p>A hard-capped supply of 1,000,000,000 AGE with scheduled burn events
+             keeps every coin scarcer as the network matures.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-03</span>
+          <h3>Instant Settlement</h3>
+          <p>Transactions confirm in roughly 3 seconds. AgeCoin moves at
+             arcade speed, not dial-up speed.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-04</span>
+          <h3>Fortress-Grade Security</h3>
+          <p>Our development team will continuously conduct research on bugs.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-05</span>
+          <h3>Community Governance</h3>
+          <p>Every AGE holder can propose and vote on protocol upgrades
+             on-chain. No backroom decisions, no hidden multisig override.</p>
+        </article>
+
+        <article class="card" role="listitem">
+          <span class="card__tag">PWR-06</span>
+          <h3>Low-Energy Footprint</h3>
+          <p>Proof-of-Age uses a fraction of the power of traditional mining,
+             so growing the network doesn't grow its carbon footprint.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WHITEPAPER / QUEST LOG ============ -->
+    <section class="whitepaper" id="whitepaper">
+      <div class="cabinet">
+        <p class="eyebrow">QUEST LOG</p>
+        <h2>White Paper AgeCoin</h2>
+        <p class="cabinet__lede">
+          The full technical breakdown of AgeCoin's consensus mechanism,
+          tokenomics, security model, and roadmap &mdash; in one document.
+        </p>
+
+        <a
+          id="whitepaperLink"
+          class="btn btn--primary btn--large"
+          href="assets/whitepaper-agecoin.pdf"
+          download="White-Paper-AgeCoin.pdf"
+        >
+          &#9660; Download White Paper 
+        </a>
+        <p class="cabinet__hint"></p>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="roadmap" id="roadmap">
+      <div class="section__head">
+        <p class="eyebrow">MAP</p>
+        <h2>Roadmap</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__stage">Stage 1</span>
+          <h3>Coin Informations</h3>
+          <p>Information regarding our coin launch will be announced via X (@AgeCoin_xyz).</p>
+        </li>
+        <li>
+          <span class="timeline__stage">Stage 2</span>
+          <h3>Security Audits</h3>
+          <p>Our development team will continuously conduct research on bugs.</p>
+        </li>
+        <li>
+          <span class="timeline__stage">Stage 3</span>
+          <h3>Coin Launch</h3>
+          <p>AgeCoin will be officially launched on the Solana network.</p>
+        </li>
+        <li>
+          <span class="timeline__stage">Stage 4</span>
+          <h3>On-Chain Governance</h3>
+          <p>Voting module opens so every holder can shape future upgrades.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="hud__brand" href="#top" aria-label="AgeCoin home">
+        <span class="coin coin--small" aria-hidden="true">
+          <span class="coin__face"></span>
+          <span class="coin__ring"></span>
+          <span class="coin__glyph">A</span>
+        </span>
+        AGECOIN
+      </a>
+      <nav class="footer__links">
+        <a href="team.html">Team</a>
+        <a href="security.html">Security</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="https://x.com/AgeCoin_xyz" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <a href="https://discord.gg/YMj9HkHyt3" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://github.com/AgeCo1n" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <p class="footer__legal">
+        &copy; 2026 AgeCoin.org &middot; Not financial advice. Do your own research.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ DEVELOPER CONSOLE (site owner only) ============ -->
+  <button class="dev-toggle" id="devToggle" aria-expanded="false" aria-controls="devPanel">&lt;/&gt;</button>
+  <aside class="dev-panel" id="devPanel" hidden>
+    <h2>Developer Console</h2>
+    <p>
+      Preview a White Paper file before publishing it. This preview only
+      works in your own browser for this session.
+    </p>
+    <p>
+      To make the White Paper downloadable for <strong>every</strong> visitor,
+      upload your real file to your server at:
+      <code>assets/whitepaper-agecoin.pdf</code> (or replace the link's
+      <code>href</code> in <code>index.html</code> to point at a .docx file instead).
+    </p>
+    <label class="dev-panel__label" for="devFileInput">Select PDF or Word file</label>
+    <input type="file" id="devFileInput" accept=".pdf,.doc,.docx">
+    <p id="devFileStatus" class="dev-panel__status" aria-live="polite"></p>
+    <button class="btn btn--secondary" id="devPreviewBtn" disabled>Preview Selected File</button>
+    <button class="btn btn--ghost" id="devCloseBtn">Close Console</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
